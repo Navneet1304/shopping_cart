@@ -1,0 +1,74 @@
+/* Font Awesome  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  
+}
+.btn{
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;font-weight: 500;
+  padding: 12px 35px;
+  color: #ffffff;
+  background-color: rgb(204, 185, 12);
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+/* for hover effect in item */
+.row .column .card img{
+  width: 60%;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+.row .column .card:hover img {
+  width: 80%;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
